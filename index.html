@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/png;base64,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">
+    <title>W3Schools Online Web Tutorials</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="data:image/png;base64,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"
+                    alt="W3school" id="img">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Tutorials
+                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Exercises
+                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Certificates
+                        </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </nav>
+        <ul class="nav nav-pills nav-fill">
+            <a href="/html/default.asp" class="ga-nav subtopnav_firstitem" title="HTML Tutorial">HTML</a>
+            <a href="/css/default.asp" class="ga-nav" title="CSS Tutorial">CSS</a>
+            <a href="/js/default.asp" class="ga-nav" title="JavaScript Tutorial">JAVASCRIPT</a>
+            <a href="/sql/default.asp" class="ga-nav" title="SQL Tutorial">SQL</a>
+            <a href="/python/default.asp" class="ga-nav" title="Python Tutorial">PYTHON</a>
+            <a href="/java/default.asp" class="ga-nav" title="Java Tutorial">JAVA</a>
+            <a href="/php/default.asp" class="ga-nav" title="PHP Tutorial">PHP</a>
+            <a href="/howto/default.asp" class="ga-nav" title="How to">HOW TO</a>
+            <a href="/w3css/default.asp" class="ga-nav" title="W3.CSS Tutorial">W3.CSS</a>
+            <a href="/c/index.php" class="ga-nav" title="C Tutorial">C</a>
+            <a href="/cpp/default.asp" class="ga-nav" title="C++ Tutorial">C++</a>
+            <a href="/cs/index.php" class="ga-nav" title="C# Tutorial">C#</a>
+            <a href="/bootstrap/bootstrap_ver.asp" class="ga-nav" title="Bootstrap Tutorial">BOOTSTRAP</a>
+            <a href="/react/default.asp" class="ga-nav" title="React Tutorial">REACT</a>
+            <a href="/mysql/default.asp" class="ga-nav" title="MySQL Tutorial">MYSQL</a>
+            <a href="/jquery/default.asp" class="ga-nav" title="JQuery Tutorial">JQUERY</a>
+            <a href="/excel/index.php" class="ga-nav" title="Excel Tutorial">EXCEL</a>
+            <a href="/xml/default.asp" class="ga-nav" title="XML Tutorial">XML</a>
+            <a href="/django/index.php" class="ga-nav" title="Django Tutorial">DJANGO</a>
+            <a href="/nodejs/default.asp" class="ga-nav" title="Node.js Tutorial">NODEJS</a>
+            <a href="/r/default.asp" class="ga-nav" title="R Tutorial">R</a>
+            <a href="/typescript/index.php" class="ga-nav" title="TypeScript Tutorial">TYPESCRIPT</a>
+            <a href="/angular/default.asp" class="ga-nav" title="Angular.js Tutorial">ANGULAR</a>
+            <a href="/git/default.asp" class="ga-nav" title="Git Tutorial">GIT</a>
+            <a href="/postgresql/index.php" class="ga-nav" title="PostgreSQL Tutorial">POSTGRESQL</a>
+            <a href="/mongodb/index.php" class="ga-nav" title="MongoDB Tutorial">MONGODB</a>
+            <a href="/asp/default.asp" class="ga-nav" title="ASP Tutorial">ASP</a>
+            <!-- <a href="/aws/index.php" class="ga-nav" title="AWS Tutorial">AWS</a>
+            <a href="/ai/default.asp" class="ga-nav" title="A.I. Tutorial">AI</a>
+            <a href="/go/index.php" class="ga-nav" title="Go Tutorial">GO</a>
+            <a href="/kotlin/index.php" class="ga-nav" title="Kotlin Tutorial">KOTLIN</a>
+            <a href="/sass/default.asp" class="ga-nav" title="Sass Tutorial">SASS</a>
+            <a href="/vue/index.php" class="ga-nav" title="Vue.js Tutorial">VUE</a>
+            <a href="/gen_ai/index.php" class="ga-nav" title="Gen A.I. Tutorial">GEN AI</a>
+            <a href="/cybersecurity/index.php" class="ga-nav" title="Cyber security Tutorial">CYBERSECURITY</a>
+            <a href="/datascience/default.asp" class="ga-nav" title="Data science Tutorial">DATA SCIENCE</a> -->
+        </ul>
+        <div class="ws-black w3-center herosection">
+            <div class="w3-content learntocodecontent">
+                <h1 class="learntocodeh1">Learn to Code</h1>
+                <h3 class="learntocodeh3">
+                    <i class="fa fa-logo w3-hide"
+                        style="color:#FFC0C7!important;margin-right:20px;z-index:1;font-size:36px!important;vertical-align:bottom"></i>
+                    With the world's largest web developer site.
+                </h3>
+                <br>
+                <form class="example" style="margin:auto;max-width:500px">
+                    <input type="text" placeholder="Search our tutorials, e.g. HTML" id="search2" class="ga-fp">
+                    <button type="button" id="learntocode_searchbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></button>
+                    <div id="listofsearchresults">
+                    </div>
+                </form>
+                <h4 class="learntocodeh4">
+                    <a href="where_to_start.asp" class="ga-fp">Not Sure Where To Begin?</a>
+                </h4>
+            </div>
+        </div>
+        <svg style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+        </svg>
+        <div class="w3-row w3-padding-32 ws-light-green" style="margin-top:-10px; ">
+            <div class="w3-content">
+                <div class="cntr">
+                    <div class="w3-col" style="padding:3%;">
+                        <h1 style="font-size:90px;font-weight:600;margin-top:-18px!important;">HTML</h1>
+                        <p style="font-size:18px;">The language for building web pages</p>
+                        <a href="/html/default.asp" class="w3-button ga-fp tut-button button-red" style="margin-bottom:2px;">Learn
+                            HTML</a><br>
+                        <a style="position:relative;overflow:visible;margin-bottom:1px;"
+                            href="https://www.w3schools.com/videos/index.php"
+                            class="w3-button ga-fp ws-yellow tut-button ws-yellow-hover"
+                            title="HTML video tutorial">Video
+                            Tutorial</a><br>
+                        <a href="/tags/default.asp" class="w3-button ga-fp w3-block ref-button black-color">HTML
+                            Reference</a><br>
+                        <a href="https://shop.w3schools.com/collections/certifications/products/html-certificate"
+                            target="_blank" class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover"
+                            title="Add HTML Certification">Get Certified</a><br>
+                    </div>
+                    <div class="w3-col" style="padding:3%">
+                        <div class="w3-hide-small grey-color w3-card-2 w3-round HTML_example" style="padding:16px;">
+                            <h3>HTML Example:</h3>
+                            <div class="w3-code htmlHigh notranslate green-border" style="height:300px">
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor"
+                                        style="color:red"> html</span><span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                                    style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span>HTML Tutorial<span
+                                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>/title<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                                    style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span><br><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span>This is a heading<span
+                                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span>This is a paragraph.<span
+                                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span><br><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span><br>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                        style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                                        style="color:mediumblue">&gt;</span></span>
+                            </div>
+                            <a href="/html/tryit.asp?filename=tryhtml_default_default" target="_blank"
+                                class="w3-button tryit-button">Try it Yourself</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
